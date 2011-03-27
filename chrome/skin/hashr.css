@@ -1,0 +1,31 @@
+.spacer {
+	width: 20px;
+}
+
+#logo {
+	margin-left: 15px;
+	height: 16px;
+	width: 56px;
+}
+
+#hashr-statusbarpanel {
+	list-style-image: url("chrome://hashr/skin/hashr.png");
+}
+
+#hashrClipboard {
+	background: url("chrome://hashr/skin/copy_up.png") no-repeat;
+	width: 14px;
+	height: 14px;
+}
+
+#hashrClipboard:hover {
+	background: url("chrome://hashr/skin/copy_over.png") no-repeat;
+	width: 14px;
+	height: 14px;
+}
+
+#hashrClipboard:active {
+	background: url("chrome://hashr/skin/copy_down.png") no-repeat;
+	width: 14px;
+	height: 14px;
+}

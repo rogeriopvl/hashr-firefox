@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://hashr/skin/hashr.css" type="text/css"?>
+
+<overlay id="hashrOverlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+<script src="chrome://hashr/content/hashr.js"/>
+
+<toolbox id="navigator-toolbox">
+	<toolbar id="hashrToolbar" toolbarname="hashr">
+		<image src="chrome://hashr/skin/hashr_banner_big.png" id="logo"/>
+		<span class="spacer"> </span>
+		<menulist id="hashtype">
+ 			<menupopup>
+    			<menuitem label="MD2" value="md2"/>
+    			<menuitem label="MD4" value="md4"/>
+    			<menuitem label="MD5" value="md5" selected="true"/>
+				<menuitem label="SHA1" value="sha1"/>
+				<menuitem label="SHA256" value="sha256"/>
+				<menuitem label="SHA384" value="sha384"/>
+				<menuitem label="SHA512" value="sha512"/>
+				<menuitem label="RIPEMD128" value="ripemd128"/>
+				<menuitem label="RIPEMD160" value="ripemd160"/>
+				<menuitem label="RIPEMD256" value="ripemd256"/>
+				<menuitem label="RIPEMD320" value="ripemd320"/>
+				<menuitem label="ROT13" value="rot13"/>
+				<menuitem label="DES STD" value="des_std"/>
+				<menuitem label="WHIRLPOOL" value="whirlpool"/>
+				<menuitem label="TIGER128,3" value="tiger128,3"/>
+				<menuitem label="TIGER160,3" value="tiger160,3"/>
+				<menuitem label="TIGER192,3" value="tiger192,3"/>
+				<menuitem label="TIGER128,4" value="tiger128,4"/>
+				<menuitem label="TIGER160,4" value="tiger160,4"/>
+				<menuitem label="TIGER192,4" value="tiger192,4"/>
+				<menuitem label="SNEFRU" value="snefru"/>
+				<menuitem label="ADLER32" value="adler32"/>
+				<menuitem label="CRC32" value="crc32"/>
+				<menuitem label="CRC32B" value="crc32b"/>
+				<menuitem label="HAVAL128,3" value="haval128,3"/>
+				<menuitem label="HAVAL160,3" value="haval160,3"/>
+				<menuitem label="HAVAL192,3" value="haval192,3"/>
+				<menuitem label="HAVAL224,3" value="haval224,3"/>
+				<menuitem label="HAVAL256,3" value="haval256,3"/>
+				<menuitem label="HAVAL128,4" value="haval128,4"/>
+				<menuitem label="HAVAL160,4" value="haval160,4"/>
+				<menuitem label="HAVAL192,4" value="haval192,4"/>
+				<menuitem label="HAVAL224,4" value="haval224,4"/>
+				<menuitem label="HAVAL256,4" value="haval256,5"/>
+				<menuitem label="HAVAL128,5" value="haval128,5"/>
+				<menuitem label="HAVAL160,5" value="haval160,5"/>
+				<menuitem label="HAVAL192,5" value="haval192,5"/>
+				<menuitem label="HAVAL224,5" value="haval224,5"/>
+				<menuitem label="HAVAL256,5" value="haval256,5"/>
+				<menuitem label="HTPASSWD" value="htpasswd"/>
+  			</menupopup>
+		</menulist>
+		<textbox id="hashrStr" cols="1" size="80" />
+		<toolbarbutton id="hashrButton" label="Hash it! >>" oncommand="hashrExtension.make_hash(event)"/>
+		<textbox id="hashrResult" size="50" hidden="true" readonly="true"/>
+		<toolbarbutton id="hashrClipboard" tooltiptext="Copy to clipboard" oncommand="hashrExtension.add_clipboard()" hidden="true"/>
+
+	</toolbar>
+</toolbox>
+
+<toolbarpalette id="BrowserToolbarPalette">
+  <toolbarbutton class="toolbarbutton-1 chromeclass-toolbar-additional"
+                 id="hashr-statusbarpanel"
+                 tooltiptext="hashr"
+                 label="hashr"
+                 oncommand="hashrExtension.show_hide()">
+ 
+  </toolbarbutton>
+</toolbarpalette>
+
+
+</overlay>

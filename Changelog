@@ -1,0 +1,7 @@
+v0.9 - added support for the new website api and fixed a bug
+		in the show/hide toolbar "edit" menu
+v0.6 - added support for htpasswd generation and Firefox 3.6.*
+v0.5 - added support for Firefox 3.5.* and fixed a bug in the result textbox
+		that if any text was inserted the extension stopped working.
+v0.2 - wrapped javascript variables and functions within a
+		javascript object to respect global namespace.
