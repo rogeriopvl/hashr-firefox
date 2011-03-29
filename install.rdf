@@ -21,7 +21,7 @@
     <!-- Front End MetaData -->
     <em:name>hashr</em:name>
     <em:description>Create cryptographic hashes in more than 40 different algorithms, including the more popular MD5, SHA1, etc.</em:description>
-    <em:creator>Rogerio Vicente</em:creator>
+    <em:creator>Rogério Vicente</em:creator>
     <em:homepageURL>http://www.rogeriopvl.com/</em:homepageURL>
 	<em:iconURL>chrome://hashr/skin/hashr.png</em:iconURL>
   </Description>      
