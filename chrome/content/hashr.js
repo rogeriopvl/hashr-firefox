@@ -98,11 +98,11 @@ var hashrExtension = {
 		var copiedLabel = document.getElementById('copied');
 		if (copiedLabel) { return false; }
 
-		var toolbar = document.getElementById('hashrToolbar');
+		var copyContainer = document.getElementById('copyContainer');
 		var newElement = document.createElement('label');
 		newElement.setAttribute('id', 'copied');
 		newElement.setAttribute('value', 'Copied!');
-		toolbar.appendChild(newElement);
+		copyContainer.appendChild(newElement);
 
 		// only show the copied message for 4 seconds
 		 window.setTimeout(function(){

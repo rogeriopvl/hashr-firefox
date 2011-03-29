@@ -6,7 +6,9 @@
 
 <toolbox id="navigator-toolbox">
 	<toolbar id="hashrToolbar" toolbarname="hashr">
-		<image src="chrome://hashr/skin/hashr_banner_big.png" id="logo"/>
+		<hbox id="logoContainer">
+			<image id="logo"/>
+		</hbox>
 		<span class="spacer"> </span>
 		<menulist id="hashtype">
  			<menupopup>
@@ -55,7 +57,9 @@
 		<textbox id="hashrStr" cols="1" size="80" />
 		<toolbarbutton id="hashrButton" label="Hash it! >>" oncommand="hashrExtension.make_hash(event)"/>
 		<textbox id="hashrResult" size="50" hidden="true" readonly="true"/>
-		<toolbarbutton id="hashrClipboard" tooltiptext="Copy to clipboard" oncommand="hashrExtension.add_clipboard()" hidden="true"/>
+		<hbox id="copyContainer">
+			<toolbarbutton id="hashrClipboard" tooltiptext="Copy to clipboard" oncommand="hashrExtension.add_clipboard()" hidden="true"/>
+		</hbox>
 
 	</toolbar>
 </toolbox>
