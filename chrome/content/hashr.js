@@ -30,14 +30,33 @@ var hashrExtension = {
 	xmlhttp: null,
 
 	init: function() {
-		// add the hashr button to the toolbar
-		var navToolbar = document.getElementById("nav-bar")
-		navToolbar.insertItem("hashr-statusbarpanel", null, null, false); 
+		var firstRun = true;
+
+		// get the extension preferences
+		var Prefs = Components.classes["@mozilla.org/preferences-service;1"]
+    		.getService(Components.interfaces.nsIPrefService);
+		Prefs = Prefs.getBranch("extensions.hashr.");
 
 		try {
-			BrowserToolboxCustomizeDone(true);
+			firstRun = Prefs.getBoolPref("first_run");
 		}
-		catch (e) {}
+		catch(e) {}
+		finally {
+			if (firstRun) {
+				Prefs.setBoolPref("first_run", false);
+				
+				// add the hashr button to the toolbar
+				var navToolbar = document.getElementById("nav-bar")
+				navToolbar.insertItem("hashr-statusbarpanel"); 
+				navToolbar.setAttribute("currentset", navToolbar.currentSet);
+				document.persist("nav-bar", "currentset");
+
+				try {
+					BrowserToolboxCustomizeDone(true);
+				}
+				catch (e) {}
+			}
+		}
 
 		// hide the hashr toolbar on start
 		var tbar = document.getElementById("hashrToolbar");
