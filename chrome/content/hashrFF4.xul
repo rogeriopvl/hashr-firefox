@@ -64,6 +64,12 @@
 	</toolbar>
 </toolbox>
 
+<statusbar id="status-bar">
+	<statusbarpanel id="hashrStatusbar" onclick="hashrExtension.show_hide()">
+		<image id="hashrIcon" src="chrome://hashr/skin/hashr.png" tooltiptext="Show/Hide Hashr Toolbar"/>
+	</statusbarpanel>
+</statusbar>
+
 <toolbarpalette id="BrowserToolbarPalette">
   <toolbarbutton class="toolbarbutton-1 chromeclass-toolbar-additional"
                  id="hashr-statusbarpanel"
