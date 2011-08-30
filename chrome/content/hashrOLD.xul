@@ -70,15 +70,4 @@
 	</statusbarpanel>
 </statusbar>
 
-<toolbarpalette id="BrowserToolbarPalette">
-  <toolbarbutton class="toolbarbutton-1 chromeclass-toolbar-additional"
-                 id="hashr-statusbarpanel"
-                 tooltiptext="hashr"
-                 label="hashr"
-                 oncommand="hashrExtension.show_hide()">
- 
-  </toolbarbutton>
-</toolbarpalette>
-
-
 </overlay>
