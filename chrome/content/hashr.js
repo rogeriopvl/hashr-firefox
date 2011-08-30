@@ -1,6 +1,6 @@
 /**
 *	hashr Firefox Extension
-*	@version: 1.0
+*	@version: 1.1
 *	@author Copyright 2008-2009 Rogerio Vicente, <http://rogeriopvl.com>
 *
 *	Report any bugs or suggestions to rogeriopvl ([at]) gmail
