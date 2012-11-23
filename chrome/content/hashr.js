@@ -1,6 +1,6 @@
 /**
 *	hashr Firefox Extension
-*	@version: 1.1
+*	@version: 1.2
 *	@author Copyright 2008-2009 Rogerio Vicente, <http://rogeriopvl.com>
 *
 *	Report any bugs or suggestions to rogeriopvl ([at]) gmail
@@ -73,7 +73,7 @@ var hashrExtension = {
 	 		var str = document.getElementById("hashrStr").value;
 			var hashtype = document.getElementById("hashtype").value;
 
-			hashrExtension.xmlhttp.open ("POST","http://rogeriopvl.com/hashr/api2/hash", true);
+			hashrExtension.xmlhttp.open ("POST","http://hashr.rogeriopvl.com/api2/hash", true);
 			hashrExtension.xmlhttp.onreadystatechange = hashrExtension.handleServerResponse;
 			hashrExtension.xmlhttp.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
     		hashrExtension.xmlhttp.send("str=" + str + "&hashtype=" + hashtype + "&client_app=firefox");
