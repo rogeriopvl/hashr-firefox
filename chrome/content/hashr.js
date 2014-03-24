@@ -120,7 +120,7 @@ var hashrExtension = {
     makeHash: function () {
         var str = document.getElementById('hashrStr').value;
         var hashtype = document.getElementById('hashtype').value;
-        var params = 'str=' + str + '&hashtype=' + hashtype + '&client_app=chrome';
+        var params = 'str=' + str + '&hashtype=' + hashtype + '&client_app=firefox';
 
         this.prefs.setCharPref('last_used_algo', hashtype);
 
