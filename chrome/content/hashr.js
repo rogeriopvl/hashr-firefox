@@ -26,7 +26,7 @@ window.addEventListener("load", function() { hashrExtension.init(); }, false);
 
 
 var hashrExtension = {
-	
+
 	xmlhttp: null,
 
 	init: function() {
@@ -44,10 +44,10 @@ var hashrExtension = {
 		finally {
 			if (firstRun) {
 				Prefs.setBoolPref("first_run", false);
-				
+
 				// add the hashr button to the toolbar
 				var navToolbar = document.getElementById("nav-bar")
-				navToolbar.insertItem("hashr-statusbarpanel"); 
+				navToolbar.insertItem("hashr-statusbarpanel");
 				navToolbar.setAttribute("currentset", navToolbar.currentSet);
 				document.persist("nav-bar", "currentset");
 
@@ -64,11 +64,11 @@ var hashrExtension = {
 	},
 
 	make_hash: function (event) {
-	
+
 		hashrExtension.xmlhttp = new hashrExtension.getXMLObject();
-	
+
 		var getdate = new Date(); //caching prevention
-	
+
 		if (hashrExtension.xmlhttp) {
 	 		var str = document.getElementById("hashrStr").value;
 			var hashtype = document.getElementById("hashtype").value;
@@ -83,7 +83,7 @@ var hashrExtension = {
 	getXMLObject: function() {
 		var xmlhttp = false;
 		xmlhttp = new XMLHttpRequest();
-	
+
    		return xmlhttp;  //returning the ajax object created
 	},
 
@@ -96,7 +96,7 @@ var hashrExtension = {
 
 		if (hashrExtension.xmlhttp.readyState == 4) {
     			if(hashrExtension.xmlhttp.status == 200) {
-					document.getElementById("hashrResult").setAttribute ("value", hashrExtension.xmlhttp.responseText);			
+					document.getElementById("hashrResult").setAttribute ("value", hashrExtension.xmlhttp.responseText);
      			}
     			else {
        		 		document.getElementById("hashrResult").setAttribute("value", "Error contacting server, please retry.");
@@ -108,7 +108,7 @@ var hashrExtension = {
 	add_clipboard: function() {
 		const gClipboardHelper = Components.classes["@mozilla.org/widget/clipboardhelper;1"].
 			getService(Components.interfaces.nsIClipboardHelper);
-		gClipboardHelper.copyString(document.getElementById("hashrResult").value);	
+		gClipboardHelper.copyString(document.getElementById("hashrResult").value);
 		hashrExtension.show_copied();
 	},
 

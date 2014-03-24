@@ -7,9 +7,9 @@
     <em:id>hashr@rogeriopvl.com</em:id>
     <em:version>1.2</em:version>
     <em:type>2</em:type>
-   
-    <!-- Target Application this extension can install into, 
-         with minimum and maximum supported versions. --> 
+
+    <!-- Target Application this extension can install into,
+         with minimum and maximum supported versions. -->
     <em:targetApplication>
       <Description>
         <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
@@ -17,12 +17,12 @@
         <em:maxVersion>6.*</em:maxVersion>
       </Description>
     </em:targetApplication>
-   
+
     <!-- Front End MetaData -->
     <em:name>hashr</em:name>
     <em:description>Create cryptographic hashes in more than 40 different algorithms, including the more popular MD5, SHA1, etc.</em:description>
     <em:creator>Rogério Vicente</em:creator>
     <em:homepageURL>http://www.rogeriopvl.com/</em:homepageURL>
 	<em:iconURL>chrome://hashr/skin/hashr.png</em:iconURL>
-  </Description>      
+  </Description>
 </RDF>
