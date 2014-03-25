@@ -1,5 +1,4 @@
 content hashr chrome/content/
 skin hashr default/1.0 chrome/skin/
-overlay chrome://browser/content/browser.xul chrome://hashr/content/hashrOLD.xul appversion<=3.6.*
-overlay chrome://browser/content/browser.xul chrome://hashr/content/hashr.xul appversion>3.6.*
+overlay chrome://browser/content/browser.xul chrome://hashr/content/hashr.xul
 style chrome://global/content/customizeToolbar.xul chrome://hashr/skin/hashr.css
