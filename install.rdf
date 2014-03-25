@@ -5,7 +5,7 @@
 
   <Description about="urn:mozilla:install-manifest">
     <em:id>hashr@rogeriopvl.com</em:id>
-    <em:version>1.2</em:version>
+    <em:version>2.0.0</em:version>
     <em:type>2</em:type>
 
     <!-- Target Application this extension can install into,
@@ -13,7 +13,7 @@
     <em:targetApplication>
       <Description>
         <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
-        <em:minVersion>1.5</em:minVersion>
+        <em:minVersion>3.6</em:minVersion>
         <em:maxVersion>6.*</em:maxVersion>
       </Description>
     </em:targetApplication>
@@ -22,7 +22,7 @@
     <em:name>hashr</em:name>
     <em:description>Create cryptographic hashes in more than 40 different algorithms, including the more popular MD5, SHA1, etc.</em:description>
     <em:creator>Rogério Vicente</em:creator>
-    <em:homepageURL>http://www.rogeriopvl.com/</em:homepageURL>
+    <em:homepageURL>http://hashr.rogeriopvl.com/</em:homepageURL>
 	<em:iconURL>chrome://hashr/skin/hashr.png</em:iconURL>
   </Description>
 </RDF>
