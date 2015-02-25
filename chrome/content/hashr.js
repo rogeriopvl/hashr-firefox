@@ -1,6 +1,6 @@
 /**
 *   hashr Firefox Extension
-*   @version: 2.0.0
+*   @version: 2.0.1
 *   @author Copyright 2008-2009 Rogerio Vicente, <http://rogeriopvl.com>
 *
 *   Report any bugs or suggestions to rogeriopvl ([at]) gmail
@@ -110,7 +110,7 @@ var hashrExtension = {
     },
 
     getAlgos: function () {
-        var algosURL = 'http://hashr.rogeriopvl.com/api2/algos';
+        var algosURL = 'https://hashr.rogeriopvl.com/api2/algos';
         this.makeRequest('GET', algosURL, null, function (data, status) {
             var algosList = JSON.parse(data);
             this.fillAlgos(algosList);
@@ -129,7 +129,7 @@ var hashrExtension = {
         document.getElementById('hashrResult').setAttribute('hidden', 'false');
         document.getElementById('hashrClipboard').setAttribute('hidden', 'false');
 
-        var remoteURL = 'http://hashr.rogeriopvl.com/api2/hash';
+        var remoteURL = 'https://hashr.rogeriopvl.com/api2/hash';
 
         this.makeRequest('POST', remoteURL, params, function(data, status) {
             if (status === 200) {
