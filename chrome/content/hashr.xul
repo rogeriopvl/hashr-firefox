@@ -21,12 +21,6 @@
     </toolbar>
 </toolbox>
 
-<statusbar id="status-bar">
-    <statusbarpanel id="hashrStatusbar" onclick="hashrExtension.toggleShow()">
-        <image id="hashrIcon" src="chrome://hashr/skin/hashr.png" tooltiptext="Show/Hide hashr toolbar"/>
-    </statusbarpanel>
-</statusbar>
-
 <toolbarpalette id="BrowserToolbarPalette">
   <toolbarbutton class="toolbarbutton-1 chromeclass-toolbar-additional"
                  id="hashr-statusbarpanel"
