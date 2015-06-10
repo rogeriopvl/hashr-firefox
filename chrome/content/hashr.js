@@ -38,7 +38,7 @@ var hashrExtension = {
         this.prefs = this.prefs.getBranch('extensions.hashr.');
 
         try {
-            firstRun = this.getBoolPref('first_run');
+            firstRun = this.prefs.getBoolPref('first_run');
         }
         catch(e) {}
         finally {
